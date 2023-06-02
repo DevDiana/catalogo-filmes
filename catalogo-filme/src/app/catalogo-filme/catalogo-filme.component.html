@@ -1,1 +1,39 @@
-<p>catalogo-filme works!</p>
+<h1>Bem-vindo(a) ao Site de Filmes</h1>
+<form (ngSubmit)="pesquisarFilme()">
+  <div
+    id="todo-container"
+    style="display: flex; justify-content: center; align-items: center"
+  >
+    <div style="text-align: center">
+      <input
+        id="todo-input"
+        type="text"
+        [(ngModel)]="termoPesquisa"
+        name="pesquisa"
+        placeholder="Digite o nome do filme"
+      />
+      <button id="add-button" type="submit" class="round-button">
+        <img src="../../assets/img/lupa.svg" height="20" width="20" />
+      </button>
+    </div>
+  </div>
+
+  <div class="lista" *ngIf="listaFilme.length > 0">
+    <div class="movie-list">
+      <div class="movie" *ngFor="let filme of listaFilme">
+        <div class="movie-poster">
+          <img src="{{ filme.Poster }}" alt="Movie Poster" />
+        </div>
+        <div class="movie-details">
+          <h3 class="movie-title">{{ filme.Title }}</h3>
+          <p>{{ filme.Year }}</p>
+          <button
+            class="favorite-button"
+            (click)="favoritarFilme(filme.imdbID)">
+            {{ isFavorito(filme.imdbID) ? "Desfavoritar" : "Favoritar" }}
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>

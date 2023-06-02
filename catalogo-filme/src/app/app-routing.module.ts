@@ -5,12 +5,12 @@ import { CatalogoFilmeComponent } from './catalogo-filme/catalogo-filme.componen
 const routes: Routes = [
   {
     path: '',
-    component: CatalogoFilmeComponent
-},
+    component: CatalogoFilmeComponent,
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

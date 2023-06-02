@@ -1,12 +1,10 @@
 <h1>Bem-vindo(a) ao Site de Filmes</h1>
 <form (ngSubmit)="pesquisarFilme()">
   <div
-    id="todo-container"
-    style="display: flex; justify-content: center; align-items: center"
-  >
+    id="lista-container">
     <div style="text-align: center">
       <input
-        id="todo-input"
+        id="lista-input"
         type="text"
         [(ngModel)]="termoPesquisa"
         name="pesquisa"

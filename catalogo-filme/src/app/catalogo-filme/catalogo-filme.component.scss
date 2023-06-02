@@ -55,10 +55,6 @@ div.lista {
   flex-wrap: wrap;
 }
 
-.favorite-icon {
-  color: #ffd700;
-  cursor: pointer;
-}
 .favorite {
   color: red;
 }
@@ -128,14 +124,17 @@ div.lista {
 .favorite-button:hover {
   background-color: #b2070a;
 }
-#todo-container {
+#lista-container {
   margin-bottom: 10px;
   padding-top: 50px;
   display: flex;
   align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#todo-container input[type="text"] {
+#lista-container input[type="text"] {
   width: 200rem;
   padding: 5px;
   font-size: 16px;
@@ -145,18 +144,18 @@ div.lista {
   padding: 1rem;
 }
 
-#todo-container button {
+#lista-container button {
   padding: 5px 10px;
   font-size: 1rem;
   margin: 2.1px;
 }
 
-#todo-container {
+#lista-container {
   margin-bottom: 10px;
   padding-top: 50px;
 }
 
-#todo-container input[type="text"] {
+#lista-container input[type="text"] {
   width: 200rem;
   padding: 5px;
   font-size: 16px;
@@ -166,7 +165,7 @@ div.lista {
   padding: 1rem;
 }
 
-#todo-container button {
+#lista-container button {
   padding: 5px 10px;
   font-size: 1rem;
 }
